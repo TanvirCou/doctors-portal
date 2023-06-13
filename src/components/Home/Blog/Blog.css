@@ -1,0 +1,17 @@
+.blog-container h5{
+    color: #1CC7C1;
+    padding-top: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog-container h1{
+    color: #3A4256;
+    text-align: center;
+}
+.blog-container{
+    background-image: url('../../../images/quote.png');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: 70px;
+    background-position-x: 50px;
+}

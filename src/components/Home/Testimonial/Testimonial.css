@@ -1,0 +1,17 @@
+.testimonial-container h5{
+    margin-left: 110px;
+    color: #1CC7C1;
+    padding-top: 120px;
+    margin-bottom: 20px;
+}
+.testimonial-container h1{
+    margin-left: 110px;
+    color: #3A4256;
+}
+.testimonial-container{
+    background-image: url('../../../images/quote.png');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: 70px;
+    background-position-x: 1050px;
+}
