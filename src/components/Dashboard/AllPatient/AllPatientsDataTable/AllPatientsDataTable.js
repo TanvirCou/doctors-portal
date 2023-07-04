@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllPatientsDataTable = ({appointments}) => {
+const AllPatientsDataTable = ({patients}) => {
     return (
         <table className='table table-borderless'>
             <thead>
@@ -17,15 +17,15 @@ const AllPatientsDataTable = ({appointments}) => {
 
             <tbody>
                 {
-                    appointments.map((appointment,index) => 
+                    patients.map((patient,index) => 
                         <tr>
                             <td >{index + 1}</td>
-                            <td>{appointment.name}</td>
-                            <td>{appointment.gender}</td>
-                            <td>{appointment.age}</td>
-                            <td>{appointment.weight}</td>
-                            <td>{appointment.phone}</td>
-                            <td>{appointment.email}</td>
+                            <td>{patient.name}</td>
+                            <td>{patient.gender}</td>
+                            <td>{patient.age}</td>
+                            <td>{patient.weight}</td>
+                            <td>{patient.phone}</td>
+                            <td>{patient.email}</td>
                         </tr>
                         )
                 }

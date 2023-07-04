@@ -23,7 +23,7 @@ const AddDoctor = () => {
         formData.append('email', info.email);
         formData.append('phone', info.phone);
       
-        fetch('http://localhost:5000/addADoctor', {
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/addADoctor', {
           method: 'POST',
           body: formData
         })

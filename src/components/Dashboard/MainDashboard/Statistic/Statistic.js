@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Statistic = ({patients, reviews}) => {
     const [prescriptions, setPrescriptions] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/prescriptions')
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/prescriptions')
             .then(res => res.json())
             .then(data => setPrescriptions(data))
     }, []);

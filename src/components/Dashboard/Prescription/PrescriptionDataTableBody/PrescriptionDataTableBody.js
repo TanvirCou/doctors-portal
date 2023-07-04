@@ -26,7 +26,7 @@ const PrescriptionDataTableBody = ({ patient, index }) => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/prescriptions')
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/prescriptions')
             .then(res => res.json())
             .then(data => {
                 for (let i = 0; i < data.length; i++) {
@@ -59,7 +59,7 @@ const PrescriptionDataTableBody = ({ patient, index }) => {
         user.service = patient.service;
         user.success = true;
         user.date = new Date().toDateString();
-        fetch('http://localhost:5000/addPrescription', {
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/addPrescription', {
             method: 'POST',
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body: JSON.stringify(user),

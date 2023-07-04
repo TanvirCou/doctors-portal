@@ -23,7 +23,7 @@ const PatientListDataTableBody = ({ patient, index }) => {
     const [hasPrescription, setHasPrescription] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/prescriptions')
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/prescriptions')
             .then(res => res.json())
             .then(data => {
                 for (let i = 0; i < data.length; i++) {

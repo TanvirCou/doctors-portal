@@ -24,7 +24,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, booking, date }) => {
     data.date = date;
     data.created = new Date();
 
-    fetch('http://localhost:5000/addAppointment', {
+    fetch('https://doctors-portal-server-rho-ten.vercel.app/addAppointment', {
       method: 'POST',
       headers: {'Content-type': 'application/json; charset=UTF-8'},
       body: JSON.stringify(data),

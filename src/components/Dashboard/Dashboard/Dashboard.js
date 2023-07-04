@@ -10,14 +10,13 @@ const Dashboard = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [appointments, setAppointments] = useState([]);
-    console.log(loggedInUser);
 
     const handleDateChange = date => {
         setSelectedDate(date);
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointmentsByDate', {
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/appointmentsByDate', {
         method: 'POST',
         headers: {'Content-type': 'application/json; charset=UTF-8'},
         body: JSON.stringify({date: selectedDate, email: loggedInUser.email}),

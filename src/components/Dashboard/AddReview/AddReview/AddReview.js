@@ -17,7 +17,7 @@ const AddReview = () => {
     const handleSubmit = e => {
         reviewInfo.date = new Date().toDateString();
         const reviewDetails = {...loggedInUser, review: reviewInfo};
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/addReview', {
             method: 'POST',
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body: JSON.stringify(reviewDetails),

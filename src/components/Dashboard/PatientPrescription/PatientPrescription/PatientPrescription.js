@@ -8,7 +8,7 @@ const PatientPrescription = () => {
     const [appointments, setAppointments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointmentsByEmail', {
+        fetch('https://doctors-portal-server-rho-ten.vercel.app/appointmentsByEmail', {
         method: 'POST',
         headers: {'Content-type': 'application/json; charset=UTF-8'},
         body: JSON.stringify({email: loggedInUser.email}),
