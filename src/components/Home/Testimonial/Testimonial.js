@@ -4,6 +4,7 @@ import wilson from '../../../images/wilson.png';
 import ema from '../../../images/ema.png';
 import aliza from '../../../images/aliza.png';
 import TestimonialDetail from '../TestimonialDetail/TestimonialDetail';
+import { Link } from 'react-router-dom';
 
 const testimonialData = [
     {
@@ -38,6 +39,9 @@ const Testimonial = () => {
                 {
                     testimonialData.map(testimonial => <TestimonialDetail testimonial={testimonial}></TestimonialDetail>)
                 }
+            </div>
+            <div className='text-center'>
+                <Link to='/review'><button class="btn btn-brand text-white">View All Review</button></Link>
             </div>
         </div>
     );

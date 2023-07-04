@@ -1,6 +1,7 @@
 import React from 'react';
 import doctor from '../../../images/doctor.png'
 import './MakeAppointment.css'
+import { Link } from 'react-router-dom';
 
 const MakeAppointment = () => {
     return (
@@ -12,7 +13,7 @@ const MakeAppointment = () => {
                 <h6 style={{ color: '#1CC7C1' }} className='mt-5 mb-3'>APPOINTMENT</h6>
                 <h1 className='text-white'>Make an appointment  <br /> Today</h1>
                 <p className='mt-2 mb-5 text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo rerum ad aliquid ullam officia expedita.</p>
-                <button className="btn btn-primary">Learn more</button>
+                <Link to='/appointment'><button className="btn btn-brand text-white">Learn more</button></Link>
             </div>
         </div>
 
