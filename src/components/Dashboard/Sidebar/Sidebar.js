@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faUsers, faGripHorizontal, faFileLines, faArrowRightFromBracket, faUserPlus, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faUsers, faGripHorizontal, faFileLines, faArrowRightFromBracket, faUserPlus, faStar, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import { UserContext } from '../../../App';
@@ -74,6 +74,12 @@ const Sidebar = () => {
                                 <span>Add doctor</span>
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/home" className="text-white">
+                                <FontAwesomeIcon icon={faHouse} />
+                                <span>Back to home</span>
+                            </Link>
+                        </li>
                     </div>
                     :
                     <div>
@@ -93,6 +99,12 @@ const Sidebar = () => {
                             <Link to="/patient/addReview" className="text-white">
                                 <FontAwesomeIcon icon={faStar} />
                                 <span>Add Review</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/home" className="text-white">
+                                <FontAwesomeIcon icon={faHouse} />
+                                <span>Back to home</span>
                             </Link>
                         </li>
                     </div>

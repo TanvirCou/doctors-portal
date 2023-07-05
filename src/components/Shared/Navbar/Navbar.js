@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import mainLogo from '../../../images/main-logo.png';
 
 const Navbar = () => {
     return (
@@ -8,7 +9,7 @@ const Navbar = () => {
     <span className="navbar-toggler-icon"></span>
   </button>
   <div>
-      <h2 className='text-brand ml-5 pl-4 pt-2 text-uppercase font-weight-bolder'>Doctors Portal</h2>
+      <img src={mainLogo} alt="" className="img-fluid mt-2" style={{width:'50px', marginLeft:'140px'}} />
   </div>
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
