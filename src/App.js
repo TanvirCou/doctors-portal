@@ -18,6 +18,7 @@ import Review from './components/Review/Review/Review';
 import ContactUs from './components/ContactUs/ContactUs/ContactUs';
 import MainDashboard from './components/Dashboard/MainDashboard/MainDashboard/MainDashboard';
 import AllPatients from './components/Dashboard/AllPatient/AllPatients/AllPatients';
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext();
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/doctor/prescriptions" element={<Prescription patients={patients}/>} />
         <Route path="/patient/patientPrescriptions" element={<PatientPrescription/>} />
         <Route path="/patient/addReview" element={<AddReview />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
     </UserContext.Provider>
